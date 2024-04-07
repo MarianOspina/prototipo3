@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1 class="titulo">Panel de Control de Ventas de la Enpresa</h1>
+    <h2 class="subtitulo">Encuesta y Captura de Datos Empresariales</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Cliente</th>
+                            <th>Barrio</th>
+                            <th>Mes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in ventas %}
+                        <tr>
+                            <td>{{ item.Cliente }}</td>
+                            <td>{{ item.Barrio }}</td>
+                            <td>{{ item.Mes }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        {{grafico|safe}}
+                    </div>
+                    <div class="col-md-12">
+                        {{fig3|safe}}
+                    </div>
+                    <div class="col-md-12">
+                        {{fig|safe}}
+                    </div>
+                    <div class="col-md-12">
+                        {{fig2|safe}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+        
+    </div>
+    
+</body>

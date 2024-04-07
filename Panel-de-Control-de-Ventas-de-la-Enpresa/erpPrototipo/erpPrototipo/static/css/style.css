@@ -1,0 +1,42 @@
+
+
+.titulo, .subtitulo {
+  text-align: left; /* Centra horizontalmente */
+  font-family: Comic Sans, sans-serif; /* Cambia la tipografía (puedes usar otras fuentes) */
+  /* También puedes ajustar el tamaño de la fuente con font-size si lo deseas */
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  /* Ancho máximo de la tabla */
+  /*margin: 0 auto;*/
+  font-family: Comic Sans, sans-serif;
+  border: 2px solid rgb(87, 35, 100);
+  /* Borde azul para toda la tabla */
+}
+
+th,
+td {
+  border: 1px solid rgb(85, 35, 100);
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #d15acb;
+  font-weight: bold;
+  /* Texto en negrita para las filas de encabezado */
+  color: rgb(85, 35, 100);
+}
+
+tr:nth-child(even) {
+  background-color: #d893cc;
+}
+
+.container-fluid .row {
+  margin-right: 0; /* Elimina el margen derecho de las filas */
+  margin-left: 0; /* Elimina el margen izquierdo de las filas */
+}
